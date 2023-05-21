@@ -1,0 +1,11 @@
+D:\projects\AmitBytesBlog\src\AmitBytesBlog\AmitBytesBlog.DataAccess\bin\Debug\netcoreapp2.2\AmitBytesBlog.DataAccess.deps.json
+D:\projects\AmitBytesBlog\src\AmitBytesBlog\AmitBytesBlog.DataAccess\bin\Debug\netcoreapp2.2\AmitBytesBlog.DataAccess.dll
+D:\projects\AmitBytesBlog\src\AmitBytesBlog\AmitBytesBlog.DataAccess\bin\Debug\netcoreapp2.2\AmitBytesBlog.DataAccess.pdb
+D:\projects\AmitBytesBlog\src\AmitBytesBlog\AmitBytesBlog.DataAccess\bin\Debug\netcoreapp2.2\AmitBytesBlog.Entity.dll
+D:\projects\AmitBytesBlog\src\AmitBytesBlog\AmitBytesBlog.DataAccess\bin\Debug\netcoreapp2.2\AmitBytesBlog.Entity.pdb
+D:\projects\AmitBytesBlog\src\AmitBytesBlog\AmitBytesBlog.DataAccess\obj\Debug\netcoreapp2.2\AmitBytesBlog.DataAccess.csprojAssemblyReference.cache
+D:\projects\AmitBytesBlog\src\AmitBytesBlog\AmitBytesBlog.DataAccess\obj\Debug\netcoreapp2.2\AmitBytesBlog.DataAccess.AssemblyInfoInputs.cache
+D:\projects\AmitBytesBlog\src\AmitBytesBlog\AmitBytesBlog.DataAccess\obj\Debug\netcoreapp2.2\AmitBytesBlog.DataAccess.AssemblyInfo.cs
+D:\projects\AmitBytesBlog\src\AmitBytesBlog\AmitBytesBlog.DataAccess\obj\Debug\netcoreapp2.2\AmitBytesBlog.DataAccess.csproj.CopyComplete
+D:\projects\AmitBytesBlog\src\AmitBytesBlog\AmitBytesBlog.DataAccess\obj\Debug\netcoreapp2.2\AmitBytesBlog.DataAccess.dll
+D:\projects\AmitBytesBlog\src\AmitBytesBlog\AmitBytesBlog.DataAccess\obj\Debug\netcoreapp2.2\AmitBytesBlog.DataAccess.pdb

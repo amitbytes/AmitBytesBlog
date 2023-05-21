@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - My notion of technology</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
+        <link href="~/lib/font-awesome/css/fontawesome.css" rel="stylesheet" />
+        <link href="~/lib/font-awesome/css/solid.css" rel="stylesheet" />
+        <link href="~/lib/font-awesome/css/regular.css" rel="stylesheet" />
+        <link href="~/lib/font-awesome/css/brands.css" rel="stylesheet" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
+    </environment>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a id="brandh" href="/" class="navbar-brand">
+                <img src="~/images/favicon-32x32.png" alt="" class="d-inline-block align-top">
+                Amit Singh'S Blog
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navBarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navBarNav">
+                <ul class="navbar-nav nav-pills ml-auto">
+                    <li class="nav-item"><a href="/" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="siteTitle">
+        <div class="dark-overlay">
+            <div class="home-inner container">
+                <div class="row">
+                    <div class="col text-center">
+                        <div class="site-Heading">
+                            <p class="h3">Amit Singh</p>
+                            <hr class="small" />
+                            <p class="h5">My notion of technology, programming, everything else...</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Main content-->
+    <div class="container pt-4" role="main">
+        <div class="row">
+            <div class="col-md-9 col-lg-9 col-sm-12">@RenderBody()</div>
+            <div class="col-md-3 col-lg-3 col-sm-12">
+                <div class="col-lg-12">
+                    <a href="#"><img class="img-thumbnail" src="https://dummyimage.com/150x150/000/fff.jpg" alt="Personal Info" /></a>
+                    <div class="author-info">
+                        <strong class="author-name h4">Amit Singh</strong>
+                        <p class="author-pro d-block">Developer, Trainer, and Blogger </p>
+                        <div class="d-flex flex-row">
+                            <a class="" href="#" title="GitHub">
+                                <span class="fas fa-stack">
+                                    <i class="fas fa-square fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a class="" href="#" title="Facebook">
+                                <span class="fas fa-stack">
+                                    <i class="fas fa-square fa-stack-2x"></i>
+                                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a class="" href="#" title="Twitter">
+                                <span class="fas fa-stack">
+                                    <i class="fas fa-square fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a class="" href="#" title="LinkedIn">
+                                <span class="fas fa-stack">
+                                    <i class="fas fa-square fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <hr />
+                <div class="col-lg-12">
+                    <h6 class="text-uppercase bg-dark text-light p-2 text-center">Recent Posts</h6>
+                    <div class="d-flex flex-column">
+                        <p><a href="#">AspNet Core Forms Authentication</a></p>
+                        <p><a href="#">AspNet Core Forms Authentication</a></p>
+                        <p><a href="#">AspNet Core Forms Authentication</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <h6 class="text-uppercase bg-dark text-light p-2 text-center">Tags</h6>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">AspNet Core <span class="badge badge-danger">10</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Linux<span class="badge badge-danger">10</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Web Servers<span class="badge badge-danger">10</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Virtualization<span class="badge badge-danger">10</span></li>
+
+                    </ul>
+                </div>
+                <hr />
+                <div class="col-lg-12">
+                    <h6 class="text-uppercase bg-dark text-light p-2 text-center">Archives</h6>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">2019 <span class="badge badge-danger">10</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">2019 <span class="badge badge-danger">10</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">2019 <span class="badge badge-danger">10</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">2019 <span class="badge badge-danger">10</span></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="border-top footer text-muted">
+
+
+    </footer>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/js/bootstrap.bundle.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+                asp-fallback-src="~/lib/bootstrap/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
+        </script>
+    </environment>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

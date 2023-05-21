@@ -1,0 +1,101 @@
+[
+  {
+    "outputFileName": "wwwroot/js/adminlte.min.js",
+    "inputFiles": [
+      "wwwroot/theme/adminLte/adminlte.js"
+    ],
+    "minify": { "enabled": true },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/bootstrap.min.js",
+    "inputFiles": [
+      "wwwroot/theme/bootstrap/bootstrap.js"
+    ],
+    "minify": { "enabled": true },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/jquery.min.js",
+    "inputFiles": [
+      "wwwroot/lib/jquery/dist/jquery.js"
+    ],
+    "minify": { "enabled": true },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/jquery.validate.min.js",
+    "inputFiles": [
+      "wwwroot/lib/jquery-validation/dist/jquery.validate.js"
+    ],
+    "minify": { "enabled": true },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/jquery.validate.unobtrusive.min.js",
+    "inputFiles": [
+      "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    ],
+    "minify": { "enabled": true },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/dataTables.min.js",
+    "inputFiles": [
+      "wwwroot/theme/jquery-datatable/*.js"
+    ],
+    "minify": { "enabled": true },
+    "sourceMap": false
+  },
+  // CSS Sections
+  {
+    "outputFileName": "wwwroot/css/adminLte-skins.min.css",
+    "inputFiles": [
+      "wwwroot/theme/adminLte/_all-skins.css"
+    ],
+    "minify": { "enabled": true },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/css/adminLte.min.css",
+    "inputFiles": [
+      "wwwroot/theme/adminLte/AdminLTE.css"
+    ],
+    "minify": { "enabled": true },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/css/bootstrap.min.css",
+    "inputFiles": [
+      "wwwroot/theme/bootstrap/bootstrap.css"
+    ],
+    "minify": { "enabled": true },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/css/fontawesome.min.css",
+    "inputFiles": [
+      "wwwroot/theme/fontawesome/css/font-awesome.css"
+    ],
+    "minify": { "enabled": true },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/css/checkbox.min.css",
+    "inputFiles": [
+      "wwwroot/theme/checkbox/checkbox.css"
+    ],
+    "minify": { "enabled": true },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/css/dataTables.bootstrap.min.css",
+    "inputFiles": [
+      "wwwroot/theme/jquery-datatable/dataTables.bootstrap.css"
+    ],
+    "minify": { "enabled": true },
+    "sourceMap": false
+  }
+
+
+]

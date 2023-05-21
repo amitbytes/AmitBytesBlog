@@ -1,0 +1,9 @@
+D:\projects\AmitBytesBlog\src\AmitBytesBlog\AmitBytesBlog.Entity\bin\Release\netcoreapp2.2\AmitBytesBlog.Entity.deps.json
+D:\projects\AmitBytesBlog\src\AmitBytesBlog\AmitBytesBlog.Entity\bin\Release\netcoreapp2.2\AmitBytesBlog.Entity.dll
+D:\projects\AmitBytesBlog\src\AmitBytesBlog\AmitBytesBlog.Entity\bin\Release\netcoreapp2.2\AmitBytesBlog.Entity.pdb
+D:\projects\AmitBytesBlog\src\AmitBytesBlog\AmitBytesBlog.Entity\obj\Release\netcoreapp2.2\AmitBytesBlog.Entity.csprojAssemblyReference.cache
+D:\projects\AmitBytesBlog\src\AmitBytesBlog\AmitBytesBlog.Entity\obj\Release\netcoreapp2.2\AmitBytesBlog.Entity.csproj.CoreCompileInputs.cache
+D:\projects\AmitBytesBlog\src\AmitBytesBlog\AmitBytesBlog.Entity\obj\Release\netcoreapp2.2\AmitBytesBlog.Entity.AssemblyInfoInputs.cache
+D:\projects\AmitBytesBlog\src\AmitBytesBlog\AmitBytesBlog.Entity\obj\Release\netcoreapp2.2\AmitBytesBlog.Entity.AssemblyInfo.cs
+D:\projects\AmitBytesBlog\src\AmitBytesBlog\AmitBytesBlog.Entity\obj\Release\netcoreapp2.2\AmitBytesBlog.Entity.dll
+D:\projects\AmitBytesBlog\src\AmitBytesBlog\AmitBytesBlog.Entity\obj\Release\netcoreapp2.2\AmitBytesBlog.Entity.pdb

@@ -1,0 +1,57 @@
+﻿/*Tshoot*/
+.tshootx {
+    border: 1px dotted red;
+}
+
+/*Client Side Validation*/
+.field-validation-error {
+    padding: 0px;
+    font-size: 12px;
+}
+.validation-summary-errors {
+    padding: 0px;
+    font-size: 14px;
+}
+.validation-summary-errors ul {
+    list-style: none;
+    list-style-type: none;
+}
+/*Login box*/
+.login-container {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    min-height: 100%;
+}
+
+.login-form {
+    vertical-align: middle;
+    display: table-cell;
+}
+.bg-dark {
+    background-color: #343a40 !important;
+}
+.login-box-body {
+    padding-bottom: 8px !important;
+    box-shadow: inset 0px -1px 0px rgba(0,0,0,0.3);
+}
+.login-box-header {
+    text-align: center;
+    padding: 2px 4px 8px 2px;
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    box-shadow: inset 0px -2px 0px rgba(0,0,0,0.3);
+}
+
+.login-box-footer {
+    padding: 10px;
+    background: #fff;
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+}
+/*Login Box End*/

@@ -1,0 +1,120 @@
+﻿@{
+    ViewData["Title"] = "System User";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                @*<h3 class="box-title">System Users</h3>*@
+                <div class="row">
+                    <div class="col-xs-6">
+                        <a class="btn btn-success btn-sm btn-samesize" asp-controller="SystemUser" asp-action="Create"><i class="fa fa-plus"></i> New</a>
+                        <a class="btn bg-navy btn-sm btn-samesize"><i class="fa fa-trash"></i> Delete</a>
+                        <a class="btn bg-navy btn-sm btn-samesize"><i class="fa fa-close"></i> Close</a>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="input-group">
+                            <span class="input-group-addon" style="padding-top:2px;"><i class="fa fa-search"></i></span>
+                            <input type="search" class="form-control input-sm list-search" placeholder="Search by UserName,Email" />
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+                <table id="tblSystemUser" class="table table-condensed table-hover table-striped">
+                    <tbody></tbody>
+                </table>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer">
+                <p class="pull-right" id="tblPageInfo">
+                    <small>11-20 Of 100</small>
+                    <i class="fa fa-step-backward page-icon" id="First"></i>
+                    <i class="fa fa-chevron-left page-icon" id="Prev"></i>
+                    <i class="fa fa-chevron-right page-icon" id="Next"></i>
+                    <i class="fa fa-step-forward page-icon" id="Last"></i>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script type="text/javascript">
+        //DataGrid
+        var TableGrid = (function ($) {
+            var oTable;
+            var InitTable = function () {
+                var $table = $('#tblSystemUser');
+                if ($table.length > 0) {
+                    if (oTable == undefined && oTable == null) {
+                        oTable = $table.DataTable({
+                            "autoWidth": false,
+                            "paging": true,
+                            "pagingType": "full",
+                            "ordering": true,
+                            "processing": false,
+                            "searching": false,
+                            "serverSide": true,
+                            "lengthChange": false,
+                            "info": true,
+                            "retrieve": true,
+                            "pageLength": 10,
+                            "ajax": function (data, callback, settings) {
+                                settings.jqXHR = $.ajax({
+                                    "type": "POST",
+                                    "url": "/SystemUser/GetData",
+                                    "data": data,
+                                    "dataType": "json",
+                                    "cache": false,
+                                    "beforeSend": function () {
+
+                                    },
+                                    "complete": function () {
+
+                                    },
+                                    "success": function (data) {
+                                        callback(data);
+                                    },
+                                    "error": function (xhr, status, error) {
+                                        alert(error);
+                                    }
+                                });
+                            },
+                            "order": [[1, 'asc']],
+                            "columns": [
+                                {
+                                    "data": "SystemUserId", "name": "SystemUserId",
+                                    "render": function (data, type, row, meta) {
+                                        return '<input type="checkbox" value="' + data + '">';
+                                    },
+                                    "visible": true, "orderable": false, "title": ""
+                                },
+                                { "data": "UserName", "name": "UserName", "orderable": true, "title": "Login" },
+                                { "data": "FullName", "name": "FullName", "orderable": true, "title": "Name" },
+                                { "data": "Title", "name": "Title", "orderable": true, "title": "Title" },
+                                { "data": "Email", "name": "Email", "orderable": true, "title": "Email" },
+                                { "data": "Mobile", "name": "Mobile", "orderable": true, "title": "Mobile" },
+                                { "data": "VersionNo", "name": "VersionNo", "orderable": false, "title": "VersionNo"},
+                            ],
+                            "language": {
+                                "zeroRecords": "No record(s) to display"
+                            }
+                        });
+                    }
+                }
+            }
+            return {
+                BindGrid:InitTable
+            };
+        })(jQuery);
+        //Trigger DataTable
+        $(function () {
+            TableGrid.BindGrid();
+        });
+    </script>
+}
